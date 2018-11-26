@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <title>Register</title>
+    <style>
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color:#a1ddff;
+    }
+    ::placeholder {
+      color: #c5c4c4 !important;
+      opacity: 1;
+    }
+    .custom-select{
+      color: white;
+      text-align: center;
+    }
+    .custom-select option {
+      color: black;
+    }
+
+    .btn-primary {
+      border-radius: 20px;
+      padding: 10px;
+      width: 40%;
+      background-color: white;
+      color: lightblue;
+      border-color: lightblue;
+    }
+    .formstyle{
+      font-style: italic;
+      color: white;
+    }
+    input {
+      background-color: rgba(255,255,255,0.5) !important;
+    }
+  </style>
+  </head>
+  <body>
+
+  {% load static %}
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px">
+      <div class="row justify-content-center">
+        
+        <div class="col-md-5 text-center">
+          <img src="{% static 'weatherwebapp/icons/won_logo2.png' %}" height="140px">
+          <img src="{% static 'weatherwebapp/icons/SignUp.png' %}" height="200px" style="transform: rotate(7.1deg);">
+          <h1 style="color: white">SIGN UP</h1><br>
+            <form class="formstyle">
+              <div class="form-group">
+                <label for="inputName4">name</label>
+                <input type="text" class="form-control" id="inputName4" placeholder="" required style="text-align: center; color: white;">
+              </div>
+              <label for="inputStatus4">I am a</label>
+                <div class="input-group mb-3" style="text-align: center;">
+                <select class="custom-select" style="background-color: rgba(255,255,255,0.5);" id="inputGroupSelect02">
+                <option selected>Choose....</option>
+                <option value="1">Student</option>
+                <option value="2">Lecturer</option>
+                <option value="3">Staff</option>
+              </select>
+            </div>
+            
+
+              <div class="form-group">
+                <label for="inputEmail4">e-mail</label>
+                <input type="E-mail" class="form-control" id="inputEmail4" placeholder="" required style="text-align: center; color: white">
+              </div>
+
+              <div class="form-group">
+                <label for="inputUser4">username</label>
+                <input type="text" class="form-control" id="inputUsername4" placeholder="" required style="text-align: center; color: white">
+              </div>
+          
+              <div class="form-group">
+                <label for="inputPassword4" class="control-label" ">password (6 chars)</label>
+                <div class="form-inline row">
+                  <div class="form-group col-sm-6">
+                    <input type="password" data-minlength="6" class="form-control" id="inputPassword4" placeholder="password" required style="text-align: center; width: 100%;">
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input type="password" class="form-control" id="inputPasswordConfirm4" data-match="#inputPassword4" data-match-error="Password doesn't match" placeholder="confirm" required style="text-align: center; width: 100%;">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+        
+              
+              <div class="form-group">
+                <label for="inputPhonum4">phone number</label>
+                <input type="text" class="form-control" id="inputPhonum4" placeholder="" required style="text-align: center; color: white">
+              </div>
+            
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  I agree with the terms and conditions
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #FFEA00; color: white; font-size: 20px">REGISTER NOW!</button>
+          </form>
+        </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>Profile</title>
+    <style>
+    output{
+        background-color: rgba(255,255,255,0.5)!important;
+        color: white !important;
+        border-radius: 20px !important; 
+        font-size: 26px !important;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+      background-color: #a1ddff
+    }
+    ::placeholder {
+        color: white !important;
+        opacity: 1;
+    }
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 5em;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Web Reviewer</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col md-5 text-center">
+                {% load static %}
+                <img class="img-fluid" src="{% static 'weatherwebapp/icons/won_logo2.png' %}">
+            </div>
+            <div class="col md-5" style="margin-top: 60px; padding-left:100px">
+                <h3 style="color: white">your <span style="color: #ffea00">profile</h3>
+                    <form class="formstyle">
+                        <div class="form-group" style="margin-top: 20px;">
+                            <div class="input-group-prepend" style="text-align: center;">
+                                <span class="input-group-text" style="background-color:#ffea00; color: white; border-radius: 30px;width: 110px;">name</span>
+                                    <output type="name" class="form-control" id="outputName4" style="text-align: center">Jehezkiel</output>
+                           </div>
+                           <div class="input-group-prepend" style="margin-top: 20px"> 
+                                <span class="input-group-text" style="background-color:#ffea00; color: white; border-radius: 30px;width: 110px">job</span>
+                                    <output type="name" class="form-control" id="outputName4" style="text-align: center">bitch</output>
+                           </div>
+                           <div class="input-group-prepend" style="margin-top: 20px">
+                                <span class="input-group-text" style="background-color:#ffea00; color: white; border-radius: 30px;width: 110px; content: center;">e-mail</span>
+                                    <output type="name" class="form-control" id="outputName4" style="text-align: center;">jeejeh@gmail.com</output>
+                           </div>
+                           <div class="input-group-prepend" style="margin-top: 20px">
+                                <span class="input-group-text" style="background-color:#ffea00; color: white; border-radius: 30px; width: 95px; text-align: center;">username</span>
+                                    <output type="name" class="form-control" id="outputName4" style="text-align: center">jehezkielmm</output>
+                           </div>
+                           <div class="input-group-prepend" style="margin-top: 20px">
+                                <span class="input-group-text" style="background-color:#ffea00; color: white; border-radius: 30px;width: 110px">contact</span>
+                                    <output type="name" class="form-control" id="outputName4" style="text-align: center">087882037983</output>
+                           </div>
+                        </div>
+                    </form>
+            </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
